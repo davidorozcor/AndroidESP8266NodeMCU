@@ -24,6 +24,10 @@ void setup() {
     delay(500);
   }
   
+  Serial.println("");
+  Serial.print("IP Address: "); //Show the IP Address to access your NodeMCU
+  Serial.print(WiFi.localIP());
+  
   serverSection();
 }
 
