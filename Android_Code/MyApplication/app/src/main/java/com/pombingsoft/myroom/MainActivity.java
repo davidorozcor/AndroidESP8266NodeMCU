@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements OnDataSendToActiv
     ImageView bg_state;
     Button btn_rl, btn_mr, btn_bed, btn_fan;
     TextView txt_network, txt_temp, txt_hum;
-    String url = "your_esp8266_ipaddress"; //Define your NodeMCU IP Address here
+    String url = "your_esp8266_ipaddress"; //Define your NodeMCU IP Address here ex: http://192.168.1.4
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
