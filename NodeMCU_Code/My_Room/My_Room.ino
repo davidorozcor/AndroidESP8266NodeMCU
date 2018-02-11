@@ -9,10 +9,18 @@ String mirror_light = "0";
 String bed_light = "0";
 String fan = "0";
 
+// NETWORK: to setup Static IP
+IPAddress ip(192, 168, x, x); //example 1,100 -- REPLACE x,x
+IPAddress gateway(192, 168, x, x); // 1, 254 -- REPLACE x,x
+IPAddress subnet(255, 255, 255, 0);
+
 ESP8266WebServer server; //server variable
 
 void setup() {
   initializePin(); //call function
+  
+  // Static IP Setup
+  WiFi.config(ip, gateway, subnet);
 
   //Making Connection With netword
   WiFi.begin(ssid, password);
