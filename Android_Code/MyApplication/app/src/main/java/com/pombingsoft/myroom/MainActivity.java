@@ -70,6 +70,8 @@ public class MainActivity extends AppCompatActivity implements OnDataSendToActiv
         btn_bed = (Button)findViewById(R.id.bed);
         btn_fan = (Button)findViewById(R.id.fan);
 
+        updateStatus(); // Added to get the actual status of GPIO when the app starts
+        
         btn_rl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
